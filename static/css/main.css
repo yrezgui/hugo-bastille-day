@@ -1,0 +1,49 @@
+html {
+  padding-bottom: 50px;
+}
+
+body {
+  background: #f1f4f6;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 980px;
+}
+
+.cerulean-blue {
+  color: #2559A9;
+}
+
+
+.dusty-gray {
+  color: #999;
+}
+
+.bg-black-pearl {
+  background: #060f1d;
+}
+
+.br--top2 {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+pre {
+  border: 1px solid #eee;
+  padding: 20px;
+  background: #f9f9f9;
+  margin: 2rem 0;
+}
+
+p {
+  margin: 1rem 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2559A9;
+}

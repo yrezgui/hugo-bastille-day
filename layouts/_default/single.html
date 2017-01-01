@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+<nav class="container center pa4 mb4">
+  <a href="/">
+    <img class="v-mid" src="{{ .Site.BaseURL }}/img/botmaster_light.svg" width="200" />
+  </a>
+</nav>
+<main class="container center">
+  {{ partial "sidebar.html" . }}
+  <div class="fl w-100 w-80-ns pl2">
+    <div class="bg-white br2">
+      <div class="tc bg-black-pearl pv4 br--top2">
+        <h1 class="fw5 white">{{ .Title }}</h1>
+      </div>
+      <div class="pa4">{{ .Content }}</div>
+    </div>
+  </main>
+{{ partial "footer.html" }}
