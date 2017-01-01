@@ -1,0 +1,14 @@
+{
+  "name": "@yrezgui/bastille-day",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "Bastille day theme for Hugo static website engine",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yacine Rezgui (@yrezgui)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "tachyons": "^4.6.1"
+  }
+}
