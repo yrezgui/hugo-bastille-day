@@ -2,7 +2,7 @@
   "name": "@yrezgui/bastille-day",
   "version": "1.0.0",
   "private": "true",
-  "description": "Bastille day theme for Hugo static website engine",
+  "description": "Bastille Day theme for Hugo static website engine",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
