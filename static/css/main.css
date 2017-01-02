@@ -36,6 +36,7 @@ pre {
   border: 1px solid #eee;
   padding: 20px;
   margin: 2rem 0;
+  overflow: auto;
 }
 
 p {
