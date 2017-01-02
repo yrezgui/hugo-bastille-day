@@ -46,3 +46,10 @@ a {
   text-decoration: none;
   color: #2559A9;
 }
+
+p > code {
+  padding: 1px 3px;
+  line-height: 25px;
+  border-radius: 3px;
+  background: #d5e7f8
+}
