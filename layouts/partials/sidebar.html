@@ -1,98 +1,14 @@
 <div class="fl w-100 w-20-ns pr2">
   <ul class="list ma0 pa0">
-    <h5 class="dusty-gray mt0 mb3 ttu">Documentation</h5>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Botmaster
-      </a>
-    </li>
-
-
-    <h5 class="dusty-gray mb3 ttu">Getting started</h5>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Installation
-      </a>
-    </li>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Quickstart
-      </a>
-    </li>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Getting set up
-      </a>
-    </li>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Messenger setup
-      </a>
-    </li>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Slack setup
-      </a>
-    </li>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Twitter setup
-      </a>
-    </li>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Telegram setup
-      </a>
-    </li>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Webhooks
-      </a>
-    </li>
-
-
-    <h5 class="dusty-gray mb3 ttu">Working with Botmaster</h5>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Botmaster Basics
-      </a>
-    </li>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/getting-started/">
-        Writing your own Bot Class
-      </a>
-    </li>
-
-
-    <h5 class="dusty-gray mb3 ttu">Middleware</h5>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Fulfill
-      </a>
-    </li>
-
-
-    <h5 class="dusty-gray mb3 ttu">Tutorials</h5>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        IBM Watson
-      </a>
-    </li>
-
-
-    <h5 class="dusty-gray mb3 ttu">Articles</h5>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Frameworks comparisons
-      </a>
-    </li>
-
-
-    <h5 class="dusty-gray mb3 ttu">Updates</h5>
-    <li class="mb2">
-      <a class="no-underline cerulean-blue" href="https://botmasterai.github.io/home/">
-        Changelog
-      </a>
-    </li>
+    {{ range $category := $.Site.Data.nav.menu }}
+      <h5 class="dusty-gray mt3 mb3 ttu">{{ $category.label }}</h5>
+      {{ range $category.items }}
+        <li class="mb2">
+          <a class="no-underline cerulean-blue" href="{{ $.Site.BaseURL }}{{ $category.label | lower | urlize }}/{{ . | lower | urlize }}.html">
+            {{ . }}
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
   </ul>
 </div>
