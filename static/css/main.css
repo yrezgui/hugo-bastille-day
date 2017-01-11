@@ -49,8 +49,30 @@ a {
 }
 
 p > code {
-  padding: 1px 3px;
-  line-height: 25px;
+  padding: 0px 2px;
+  line-height: 21px;
   border-radius: 3px;
-  background: #d5e7f8
+  background: #FFF7DD;
+}
+
+table {
+  border: 1px solid #eaeaea;
+  table-layout: auto;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  border: 1px solid #e9e9e9;
+  white-space: nowrap;
+  color: #5C6B77;
+  font-weight: 600;
+  padding: 10px 16px;
+  background: #F7F7F7;
+}
+
+td {
+  border: 1px solid #e9e9e9;
+  padding: 10px 16px;
 }
