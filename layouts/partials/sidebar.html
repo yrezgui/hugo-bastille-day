@@ -1,10 +1,10 @@
-<div class="fl w-100 w-20-ns pr2">
-  <ul class="list ma0 pa0">
+<div id="sidebar" class="fl w-100 w-20-l pr1-l dn di-l">
+  <ul class="list mv2 ml4 ma2-l pa0">
     {{ range $category := $.Site.Data.nav.menu }}
       <h5 class="dusty-gray mt3 mb3 ttu">{{ $category.label }}</h5>
       {{ range $category.items }}
         <li class="mb2">
-          <a class="no-underline cerulean-blue" href="{{ $.Site.BaseURL }}{{ $category.label | lower | urlize }}/{{ . | lower | urlize }}.html">
+          <a class="no-underline cerulean-blue" href="{{ $.Site.BaseURL }}{{ $category.label | lower | urlize }}/{{ . | lower | urlize }}/">
             {{ . }}
           </a>
         </li>
