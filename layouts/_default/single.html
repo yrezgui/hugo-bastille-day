@@ -1,12 +1,17 @@
 {{ partial "header.html" . }}
 <nav class="container center pa4 mb3">
-  <a href="/">
-    <img class="v-mid" src="{{ .Site.BaseURL }}img/botmaster_light.svg" width="200" />
-  </a>
+  <div class="fl w-80 w-100-l">
+    <a href="/">
+      <img class="v-mid" src="{{ .Site.BaseURL }}img/botmaster_light.svg" width="200" />
+    </a>
+  </div>
+  <div class="fl w-20 tr dn-l f1 dusty-gray" onclick="showNavMenu()">
+    &#9776;
+  </div>
 </nav>
 <main class="container center">
   {{ partial "sidebar.html" . }}
-  <div class="fl w-100 w-80-ns pl2">
+  <div class="fl w-80-l w-100 pl2-l">
     <div class="bg-white br2 mt3">
       <div class="tc bg-black-pearl pv4 br--top2">
         <h1 class="fw5 white">{{ .Title }}</h1>
