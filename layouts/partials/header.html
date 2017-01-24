@@ -3,11 +3,14 @@
 
 <head>
   <meta charset="utf-8" />
+  {{ partial "meta.html" . }}
+  {{ partial "favicon.html" . }}
   <title>Botmaster | {{ .Title }}</title>
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/tachyons.css" />
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" />
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/notices.css" />
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/base16-tomorrow.light.css" />
+  {{ partial "style.html" . }}
 </head>
 
 <body>
